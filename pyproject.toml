@@ -1,0 +1,20 @@
+[project]
+name = "image-tool"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "inori", email = "3429145082@qq.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "opencv-python>=5.0.0.93",
+    "pillow>=12.3.0",
+]
+
+[project.scripts]
+image-tool = "image_tool:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
